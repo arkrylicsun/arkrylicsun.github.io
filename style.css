@@ -1,0 +1,131 @@
+/* dark mode */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: black;
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: left;
+    }
+}
+
+/* light mode */
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: white;
+        color: black;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: left;
+    }
+}
+
+a {
+    color: palevioletred
+    /* alt colour maybe rgb(116, 187, 80) */
+}
+
+/* default - computer */
+/* category posing */
+.pagedoll {
+    position: relative;
+    margin-left: 15%;
+}
+
+.basicInfo {
+    position: relative;
+    margin-left: 50%;
+    margin-top: 2%;
+}
+
+.portfolios {
+    position: relative;
+}
+
+.about {
+    position: relative;
+    margin-left: 50%;
+    margin-top: 5%;
+    border: 2px grey solid;
+    width: 400px;
+}
+
+.contact {
+    position: relative;
+    margin-left: 18%;
+}
+
+/* pagedoll */
+#terminaldoll {
+    position: absolute;
+    border: 2px grey solid;
+}
+
+#doll {
+    position: absolute;
+}
+
+#dollhead {
+    position: absolute;
+    top: -15px;
+    left: 6%
+}
+
+#logodoll {
+    position: absolute;
+    left: 3.5%;
+    top: 3px;
+}
+
+/* about */
+#abouttext {
+    width: 380px;
+    position: absolute;
+    top: 10%;
+    margin-left: 2%;
+    margin-top: 1%;
+    overflow: auto;
+}
+
+#abouthead {
+    position: absolute;
+    top: -14px;
+    left: 18%;
+}
+
+#logoabout {
+    position: absolute;
+    top: 1%;
+    left: 10%;
+
+}
+
+#terminalabout {
+    width: 400px;
+}
+
+/* other stuff */
+#otherpagedoll {
+    position: fixed;
+    right: 25px;
+    bottom: 15px;
+}
+
+/* adjust to stop overlap on smaller screens*/
+@media (max-width: 1200px) {
+    .pagedoll {
+        margin-left: 5%;
+    }
+}
+/* no more star overlap */
+@media (max-width: 1020px) {
+    #dollhead {
+    position: absolute;
+    top: -15px;
+    left: 8%
+}
+
+#logodoll {
+    position: absolute;
+    left: 5%;
+    top: 3px;
+}
+}
